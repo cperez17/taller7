@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #f0e0dc;
+  
+  min-height: 100vh;
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+main {
+  flex: 1;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 650px;
+  
+}
+
+.title {
+  margin: 20px 101px  ;
+  
+  line-height: 1.15;
+  font-size: 3rem;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.horaActual{
+  margin: -60px -300px;
+  line-height: 1;
+  font-size: 2rem;
+  align-items: center;
+  
+  
+}
+/* Recuadros:*/
+
+.codigoProximo{
+  /*arribaabajo | <- ->     */
+  margin: 120px -10px;
+  width: 110px;/*ancho*/
+  font-size: 1.5rem;
+  align-items: center;
+  border:#050505 2px solid;
+  background-color: rgb(189, 219, 54);
+  text-align: center;
+  
+}
+.tipoProximo{
+  margin: -160px 98px;
+  width: 80px;/*ancho*/
+  align-items: center;
+  font-size: 1.5rem;
+  align-content: center;
+  text-align: center;
+  border:#050505 2px solid;
+}
+.fechaProxima{
+  margin: 120px 176px;
+  width: 350px;/*ancho*/
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+  border:#050505 2px solid;
+}
+.frase{
+  margin: -160px 524px;
+  width: 200px;/*ancho*/
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+  border:#050505 2px solid;
+}
+
+.indice{
+  
+}
+
+.codigo{
+  margin: 210px -110px;
+  width: 110px;/*ancho*/
+  font-size: 1.5rem;
+  
+  text-align: center;
+  border:#050505 2px solid;
+  
+}
+
+.asignatura{
+  margin: -250px -2px;
+  width: 330px;/*ancho*/
+  font-size: 1.5rem;
+  text-align: center;
+  border:#050505 2px solid;
+}
+
+.tipo{
+  margin: 210px 326px;
+  width: 160px;/*ancho*/
+  font-size: 1.5rem;
+  text-align: center;
+  border:#050505 2px solid;
+}
+
+.fecha{
+  margin: -250px 484px;
+  width: 330px;/*ancho*/
+  font-size: 1.5rem;
+  text-align: center;
+  
+  border:#050505 2px solid;
+}
+
+
+
+.codigoVariante{
+  margin: 249px -110px;
+  width: 110px;/*ancho*/
+  font-size: 1.5rem;
+  
+  text-align: center;
+  /*border:#050505 2px solid;*/
+  
+}
+
+.datos{
+  margin:0px 0px ;
+  width: 922px;
+  height: 50px;
+  display:1;
+  text-align: left;
+  border:#eb2424 2px solid;
+  
+}
+
+.tabla{
+ 
+  
+}
+
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

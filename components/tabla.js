@@ -1,0 +1,8 @@
+let datos = [
+    {id:"BAIN083", 
+    name:"Calculo en Varias Variables"},
+    {
+    id:"BAIN087",
+    name:"Metodos Numericos"
+    }
+]
