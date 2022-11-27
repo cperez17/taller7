@@ -1,64 +1,67 @@
-import Head from "next/head"
-import datos from "../components/tabla"
-import { useEffect } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 
+const Index = () => {
+  return (
+    <div className="container">
+      <Head>
+        <title>Fechas Importantes</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
+      <main>
+        <Image
+          src="/images/reloj.jpg"
+          height={300} // Desired size with correct aspect ratio
+          width={1000} // Desired size with correct aspect ratio
+          alt="Relojero"
+        />
 
+        <h1 className="title">Cuenta Regresiva</h1>
 
-const Visualizador = () =>{
+        <p className="description">
+          Este código está en <code>pages/index.js</code>
+        </p>
 
-    
+        <div className="grid">
+          <Link href={{
+              pathname: "/response",
+              query: { opt: 0 },
+            }}
+          >
+            <a className="card">Excelente!</a>
+          </Link>
+          <Link
+            href={{
+              pathname: "/response",
+              query: { opt: 1 },
+            }}
+          >
+            <a className="card">Más o menos no mas!</a>
+          </Link>
+          <Link
+            href={{
+              pathname: "/response",
+              query: { opt: 2 },
+            }}
+          >
+            <a className="card">Horrible! :(</a>
+          </Link>
+        </div>
+      </main>
 
-    return(
-        <div className="container">
-            <Head>
-                <title>INFO104 Cuenta Regresiva</title>
-            </Head>
-            <main>
-                
-                <h1 className="title">Proximas Actividades</h1>
-                <div className="horaActual">HH:MM:SS</div>
-                
-                <div className="codigoProximo">BAIN083</div>
-                <div className="tipoProximo">PS2</div>
-                
-                <div className="fechaProxima">Tiempo restante: 1 dia, 18:30:56</div>
-                <div className="frase">Queda Poquito</div>
-                
-                <div className="codigo">Codigo</div>
-                <div className="asignatura">Asignatura</div>
-                <div className="tipo">Actividad</div>
-                <div className="fecha">Fecha</div>
-
-                
-                <div className="codigoVariante">
-                    <table className="datos">
-                        <tr>
-                            <td>Bain 083</td>
-                            <td>Calculo en Varias Variable</td>
-                            <td>Prueba</td>
-                            <td>15 / 11 / 22, 17:30 hrs</td>
-                        </tr>
-                        <tr>
-                            <td>Bain 087</td>
-                            <td>Metodos numericos</td>
-                            <td>Prueba</td>
-                            <td>30 / 11 / 22, 17:30 hrs</td>
-                        </tr>
-                        
-                        
-                    </table>
-                    
-                </div>
-      
-            </main>
-            
-            
-            
-            
-            
+      <footer>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+          No clickear rick
+        </a>
+        &nbsp;-&nbsp;
+        <Link href="/about">
+          <a>Sobre esta página</a>
+        </Link>
+      </footer>
     </div>
-    );
+  );
 };
-export default Visualizador;
 
+export default Index;
