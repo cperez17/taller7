@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
-const Index = () => {
+const Indexrespaldo1 = () => {
   return (
     <div className="container">
       <Head>
@@ -13,8 +13,8 @@ const Index = () => {
       <main>
         <Image
           src="/images/reloj.jpg"
-          height={100} // Desired size with correct aspect ratio
-          width={200} // Desired size with correct aspect ratio
+          height={300} // Desired size with correct aspect ratio
+          width={1000} // Desired size with correct aspect ratio
           alt="Relojero"
         />
 
@@ -60,4 +60,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Indexrespaldo1;

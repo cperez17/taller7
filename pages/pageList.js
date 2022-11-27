@@ -4,7 +4,7 @@ import TodoItem from "../components/todoItem";
 import { useEffect } from "react";
 
 export async function getServerSideProps(context) {
-  const res = await fetch("http://localhost:3000/data/todo.json"); // esto esta en la carpeta public/data
+  const res = await fetch("http://localhost:3000/data/asignaturas.json"); // esto esta en la carpeta public/data
   const data = await res.json();
 
   if (!data) {

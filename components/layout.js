@@ -38,15 +38,6 @@ const Layout = ({ children, pageId }) => {
           </a>
         </Link>
 
-        <Link href="/page3">
-          <a
-            className={pageId === "page3" ? "currentPage" : ""}
-            onClick={incrementViews}
-          >
-            Página 3
-          </a>
-        </Link>
-
         <Link href="/pageList">
           <a
             className={pageId === "page4" ? "currentPage" : ""}
