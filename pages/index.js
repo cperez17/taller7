@@ -29,10 +29,6 @@ function index(){
                 </div>
                 <div className="tabla1">
                     <div className="codigo2">{CrearTabla(data,n)}</div>
-                    
-                <TyperScript>
-                    <div className="codigo2">{CrearTabla(data,n)}</div>
-                </TyperScript>
                 
                 </div>
 
