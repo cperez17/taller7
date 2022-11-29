@@ -15,11 +15,34 @@ body {
 .container { /*El fondo completo*/
   background-color: #ebeff3;
   min-height: 100vh; /*altura de la pagina*/
-  padding: 0rem 0rem;
+  padding: 1px;
   display: flex;
-  flex-direction: column; /*sd*/
-  justify-content: center;
+  flex-direction: column; /*ordena los elementos en columnas o filas*/
+  justify-content: center; /*ajusta lo que tiene dentro cuando se aleja el zoom*/
   align-items: center;
+}
+
+.barraSuperior {
+  background: #8a95f3;
+  width: 1000px;
+  height: 80px;
+  border: 1px solid red;
+  padding: 10px;
+  text-align: center;
+  /*line-height: normal;*/
+  color: aliceblue;
+  
+
+/*
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1000px;
+  width: 80%;
+  max-width: 1000px; ancho del grid
+  margin-top: 1rem;
+*/
 }
 
 main { /*dentro del fondo*/
@@ -33,18 +56,19 @@ main { /*dentro del fondo*/
   align-items: center;
   width: 1920px; /*ancho de todo el elemento main y lo que contiene*/
   height: 1080px;
-  max-width: 19200px;
+  max-width: 1920px;
   max-height: 1080px; 
 }
 
 footer {
   background-color: rgb(192, 230, 88);
-  width: 100%;
+  width: 1920px;
   height: 100px;
   border-top: 1px solid #7a0303;
   display: flex;
-  justify-content: center;
+  justify-content: center; /*ajusta horizontalmente el texto*/
   align-items: center;
+  font-size: 1.0em;
 }
 
 footer img {
@@ -145,18 +169,6 @@ code {
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  
-  background: #c90505;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 1000px;
-  max-width: 1000px; /*ancho del grid*/
-  margin-top: 1rem;
 }
 
 .card { /*BOTONES*/
