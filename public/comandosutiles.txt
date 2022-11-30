@@ -1,0 +1,3 @@
+npm run dev : inicia el host local de la pagina en localhost:3000
+ctrl + c : termina la ejecucion
+node : es el comando para ejecutar un archivo js, es "node nombrearchivo"
